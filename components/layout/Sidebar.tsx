@@ -10,6 +10,7 @@ import {
   BarChart3,
   History,
   ShieldCheck,
+  Globe,
 } from 'lucide-react';
 
 interface SidebarProps {
@@ -21,10 +22,10 @@ export const Sidebar: React.FC<SidebarProps> = ({ onCloseMobile }) => {
 
   const navItems = [
     {
-      href: '/',
+      href: '/dashboard',
       label: 'Ringkasan',
       icon: LayoutDashboard,
-      active: pathname === '/',
+      active: pathname === '/dashboard' || pathname === '/',
     },
     {
       href: '/episodes',
@@ -54,7 +55,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ onCloseMobile }) => {
   ];
 
   return (
-    <aside className="w-60 bg-[#FBFBFD] text-[#1D1D1F] flex flex-col h-screen fixed left-0 top-0 z-30 border-r border-black/[0.05]">
+    <aside className="w-64 bg-[#FBFBFD] text-[#1D1D1F] flex flex-col h-screen fixed left-0 top-0 z-30 border-r border-black/[0.05]">
       {/* Brand Header */}
       <div className="h-14 px-5 flex items-center justify-between border-b border-black/[0.04]">
         <Link href="/" className="flex items-center gap-2.5 group" onClick={onCloseMobile}>
@@ -116,6 +117,18 @@ export const Sidebar: React.FC<SidebarProps> = ({ onCloseMobile }) => {
             </Link>
           );
         })}
+
+        {/* Divider & Public Landing Page Link */}
+        <div className="pt-4 mt-4 border-t border-black/[0.04]">
+          <Link
+            href="/"
+            onClick={onCloseMobile}
+            className="flex items-center gap-3 px-3.5 py-2 rounded-xl text-xs font-medium text-[#6E6E73] hover:text-[#0071E3] hover:bg-black/[0.02] transition-colors"
+          >
+            <Globe className="w-4 h-4 text-[#86868B]" />
+            <span className="font-heading">Beranda Web</span>
+          </Link>
+        </div>
       </div>
 
       {/* Clean Minimalist Footer */}

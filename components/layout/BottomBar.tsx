@@ -17,10 +17,10 @@ export const BottomBar: React.FC = () => {
 
   const navTabs = [
     {
-      href: '/',
+      href: '/dashboard',
       label: 'Ringkasan',
       icon: LayoutDashboard,
-      active: pathname === '/',
+      active: pathname === '/dashboard' || pathname === '/',
     },
     {
       href: '/episodes',
