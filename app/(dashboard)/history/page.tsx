@@ -86,7 +86,7 @@ export default function HistoryPage() {
       {/* History Inset Grouped Table */}
       <div className="bg-white rounded-3xl border border-black/[0.06] shadow-[0_2px_12px_rgba(0,0,0,0.03)] overflow-hidden">
         <div className="overflow-x-auto">
-          <table className="w-full text-xs sm:text-sm text-left">
+          <table className="w-full min-w-[1000px] text-xs sm:text-sm text-left whitespace-nowrap">
             <thead>
               <tr className="border-b border-black/[0.06] text-[#86868B] font-heading font-semibold">
                 <th className="py-3 px-4">Kode Simulasi</th>

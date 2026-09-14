@@ -8,7 +8,7 @@ import { ShieldCheck, ArrowUpRight, Activity } from 'lucide-react';
 export const FooterSection: React.FC = () => {
   return (
     <footer className="bg-[#1D1D1F] text-white pt-16 pb-12 border-t border-black/[0.1]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-5xl mx-auto px-6 sm:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/[0.08]">
           {/* Brand Identity & Mission (Spans 2 cols on lg) */}
           <div className="lg:col-span-2 space-y-4">

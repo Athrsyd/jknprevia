@@ -142,7 +142,7 @@ export default function AnalyticsPage() {
         </div>
 
         <div className="overflow-x-auto">
-          <table className="w-full text-xs sm:text-sm text-left">
+          <table className="w-full min-w-[650px] text-xs sm:text-sm text-left whitespace-nowrap">
             <thead>
               <tr className="border-b border-black/[0.06] text-[#86868B] font-semibold">
                 <th className="py-3 px-4">Provinsi</th>

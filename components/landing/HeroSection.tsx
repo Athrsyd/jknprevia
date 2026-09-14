@@ -38,7 +38,7 @@ export const HeroSection: React.FC = () => {
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-gradient-to-b from-[#0071E3]/12 via-[#30B0C7]/8 to-transparent blur-3xl -z-10 pointer-events-none rounded-full" />
       <div className="absolute top-40 right-10 w-72 h-72 bg-[#34C759]/10 blur-2xl -z-10 pointer-events-none rounded-full" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-5xl mx-auto px-6 sm:px-8">
         <div className="text-center max-w-3xl mx-auto space-y-4">
           {/* Top Pill Badge */}
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/80 backdrop-blur-md border border-black/[0.08] shadow-2xs hover:border-[#0071E3]/30 transition-all cursor-default">
